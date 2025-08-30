@@ -1,106 +1,88 @@
-# ChatGPT Tkinter Desktop App
+# ChatDesk AI – ChatGPT Tkinter Desktop App
 
-[![GitHub](https://badgen.net/badge/icon/GitHub?icon=github&color=black&label)](https://github.com/MaxineXiong)
+[![GitHub](https://badgen.net/badge/icon/GitHub?icon=github&color=black&label)](https://github.com/your-username)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Made with Python](https://img.shields.io/badge/Python->=3.6-blue?logo=python&logoColor=white)](https://www.python.org)
-[![OpenAI API](https://img.shields.io/badge/OpenAI_API-E5E4E2?logo=OpenAI&logoColor=%23000000)](https://openai.com/blog/openai-api)
-[![ChatGPT](https://img.shields.io/badge/ChatGPT-00A67E?logo=openai)](https://chat.openai.com/)
+[![Python](https://img.shields.io/badge/Python-3.9+-blue?logo=python&logoColor=white)](https://www.python.org)
+[![OpenAI API](https://img.shields.io/badge/OpenAI_API-00A67E?logo=openai&logoColor=white)](https://platform.openai.com/)
 
-<br/>
+---
 
-Welcome to the repository for the **unofficial ChatGPT Tkinter Desktop App**! This user-friendly application allows you to have natural language conversations
-with [ChatGPT](https://openai.com/index/chatgpt) directly from your local computer — provided you have internet access. Built upon OpenAI's [**Chat Completions API**](https://platform.openai.com/docs/guides/text-generation/chat-completions-api), it leverages advanced natural language processing capabilities to deliver high-quality responses to human's requests.
-Through an intuitive user interface, you can easily select between [***o1***](https://platform.openai.com/docs/models/o1), [***o3-mini***](https://platform.openai.com/docs/models/o3-mini), [***gpt-4.5-preview***](https://platform.openai.com/docs/models/gpt-4.5-preview), [***gpt-4o***](https://platform.openai.com/docs/models/gpt-4o),  and [***gpt-4o-mini***](https://platform.openai.com/docs/models/gpt-4o-mini) models, engage in conversations with ChatGPT, review previous interactions,
-and even listen to the chatbot's responses through audio playback. The goal of this application is to provide an immersive and enjoyable conversational experience that
-closely resembles interacting with a real person.
+## Overview
+**ChatDesk AI** is a Python-based desktop application for interacting with OpenAI’s ChatGPT models.  
+Built with **Tkinter + CustomTkinter**, it provides a simple, modern interface that allows you to run ChatGPT locally on your computer using your own API key.  
 
-***Press the CTRL key and click the badge below simultaneously to run the application** (Please be aware that the audio playback functionality may not be available when running the application on Replit)*:
+Key highlights:
+- Easy-to-use desktop client for ChatGPT  
+- Model selection (GPT-4o, GPT-4o mini, o1, etc.)  
+- Conversation history within a session  
+- Optional text-to-speech playback of responses  
 
-[![Run on Repl.it](https://replit.com/badge/github/MaxineXiong/ChatGPT-Tkinter-Desktop-App.git)](https://replit.com/@MaxineXiong/ChatGPT-Tkinter-Desktop-App?v=1)
-
-<br/>
+---
 
 ## Features
+- **User Interface**: Clean and responsive, built with Tkinter and CustomTkinter  
+- **Model Selection**: Switch between multiple GPT models  
+- **Conversation History**: Review your past exchanges within the app  
+- **Audio Playback**: Listen to ChatGPT’s responses (optional)  
+- **API Key Manager**: Update and manage your OpenAI key directly in the app  
 
-- **Intuitive User Interface**: The **ChatGPT Tkinter Desktop App** provides a seamless and user-friendly interface, enabling effortless conversations with ChatGPT.
-- **Immersive Conversational Experience**: Engage in natural language conversations with ChatGPT using your own [OpenAI API key](https://platform.openai.com/api-keys), creating an authentic and immersive experience that closely resembles conversing with a real person.
-- **Model Selection**: Choose between the ***o1***, ***o3-mini***, ***GPT-4.5***, ***GPT-4o***, and ***GPT-4o mini*** models to tailor the conversational capabilities to your specific needs, ensuring optimal performance and accuracy.
-- **Conversation History**: Easily access and review your past conversations within the app, allowing for convenient reference and continuity.
-- **Audio Playback**: Enhance your experience by listening to the chatbot's responses through built-in audio playback functionality, bringing the conversation to life.
-
-<br/>
+---
 
 ## Repository Structure
+ChatDesk-AI/
+├── MAIN.py # Main application (Tkinter GUI)
+├── bot.py # ChatGPTBot class (API + TTS logic)
+├── icons/ # Application icon (chat.ico)
+├── requirements.txt # Dependencies
+├── README.md # Documentation
+└── LICENSE
 
-The repository is structured as follows:
-```
-ChatGPT-Tkinter-Desktop-App/
-├── main.py                   
-├── bot.py
-├── icons/
-│   └── chat.ico                 
-├── requirements.txt         
-├── .gitignore
-├── README.md                 
-└── LICENSE                   
-```
+---
 
-- **main.py**: This file is the main entry point of the desktop app and contains the Python code responsible for handling the user interface and communication with GPT models.
-- **bot.py**: This file contains the Python code that defines the class for the ChatGPTBot, encapsulating the functionality of the ChatGPT models and handling the generation of responses.
-- **icons/**: This folder contains the ICO image that is used as the app's window icon.
-- **requirements.txt**: This file lists all the required Python modules and packages necessary to run the desktop app. You can install these dependencies on your local computer by running the command `pip install -r requirements.txt`.
-- **.gitignore**: Specifies which files and directories Git should ignore, helping to keep the repository clean from unnecessary or sensitive files.
-- **README.md**: Provides an overview of this repository.
-- **LICENSE**: The license file for the project.
+## Installation & Setup
 
-<br/>
-
-## Get Started
-
-To intall the desktop application on your computer, please follow these steps:
-
-1) Clone this repository to your local machine using the following command:
-    ```
-    git clone https://github.com/MaxineXiong/ChatGPT-Tkinter-Desktop-App.git
-    ```
-    Alternatively, you can download the EXE application from the web application **[Talk to GPT](https://maxinexiong-openai-api-web-apps-home-xbxlm8.streamlit.app/Talk_To_GPT)**.
-
-2) Download and install the latest version of [Python](https://www.python.org/downloads/) for your system. Make sure to select the "Add Python to PATH" option during the installation process.
-
-3) Navigate to the project folder using File Explorer, type `cmd` in the address bar at the top of the window, and press Enter. This will open Command Prompt in the project folder.
-
-4) Now launch the desktop application by entering the following command in the Command Prompt:
-    ```
-    python main.py
-    ```
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/ChatDesk-AI.git
+   cd ChatDesk-AI
+Install dependencies
 
 
-Now you can start chatting with ChatGPT by entering your API key and selecting a GPT model, and then typing your messages in the input field and pressing Enter, as the video below demonstrates.
+pip install -r requirements.txt
+Set your OpenAI API key
 
-[ChatGPT-Tkinter-Desktop-App-Demo](https://github.com/MaxineXiong/ChatGPT-Tkinter-Desktop-App/assets/55864839/089cf277-d42f-4d85-800f-7b75dbc39684)
+macOS/Linux:
 
-<br/>
 
-## Contributions
+export OPENAI_API_KEY="your_api_key_here"
+Windows (PowerShell):
 
-Contributions to the **ChatGPT Tkinter Desktop App** are welcome! If you have any ideas, suggestions, or bug fixes, please open an issue or submit a pull request. Your contributions can help improve the functionality and user experience of the app.
 
-<br/>
+Copy code
+setx OPENAI_API_KEY "your_api_key_here"
+Run the application
 
-## License
 
-The **ChatGPT Tkinter Desktop App** is licensed under the [MIT License](https://choosealicense.com/licenses/mit/). Feel free to use, modify, and distribute the application in accordance with the terms of the license.
 
-<br/>
+python MAIN.py
+Example Usage
+Enter your API key and select a GPT model
 
-## Acknowledgments
+Type your message and press Enter to chat
 
-I would like to express my gratitude to the open-source community for their invaluable contributions. The development of this app would not have been possible without the support and efforts of the following projects and individuals:
+(Optional) Use the “Play” button to hear the response
 
-- [OpenAI](https://openai.com/) for developing GPT models and APIs.
-- [Python](https://www.python.org/) for providing a powerful programming language.
-- [GitHub](https://github.com/) for hosting this repository and enabling collaboration.
+Contributions
+Contributions are welcome. Please open an issue or submit a pull request with improvements or bug fixes.
 
-<br/>
+License
+This project is licensed under the MIT License.
 
-Thank you for using the **ChatGPT Tkinter Desktop App**! I hope you find it useful and enjoy your conversations with ChatGPT.
+Author
+Developed by Harshal Kamble
+
+LinkedIn: [linkedin.com/in/your-linkedin](https://www.linkedin.com/in/harshalka/)
+
+
+
+---
